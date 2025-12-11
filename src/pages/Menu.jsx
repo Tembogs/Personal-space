@@ -58,7 +58,7 @@ function Menu() {
       items: [
         {Name:'Egusi', Price:600, id:17, tab:3, max:5, group:'Soup', img:'/ricely.png'},
         {Name:'Ila-alasepo', Price:800, id:18, tab:3, max:9, group:'Soup', img:'/ricely.png'},
-        {Name:'Egbegiri', Price:500, id:19, tab:3, max:8, group:'Soup', img:'/ricely.png'},
+        {Name:'Gbegiri', Price:500, id:19, tab:3, max:8, group:'Soup', img:'/ricely.png'},
         {Name:'Efo-riro', Price:800, id:20, tab:3, max:3, group:'Soup', img:'sfhdakjkjdj,dkjlzcul'},
         {Name:'Ewedu', Price:900, id:21, max:6, tab:3, group:'Soup', img:'sfhdakjkjdj,dkjlzcul'},
         {Name:'Stew', Price:400, id:22, max:4, tab:3, group:'Soup', img:'sfhdakjkjdj,dkjlzcul'},
@@ -195,6 +195,7 @@ function Menu() {
                       onClick={() => removeFromCart(item.id)}
                       >
                         <MdDelete className="hover:text-red-600 md:text-black text-red-600  -mt-1 size-5"/>
+                        
                       </button>    
           </div>
         ))}
@@ -219,7 +220,7 @@ function Menu() {
         className={`md:sticky fixed md:mt-10 mt-20 rounded-2xl max-h-full  md:top-10 left-0  md:w-64 w-45  p-5 z-50 shadow-lg  transition-all duration-2000 ease-in-out -mx-4 ${
           open 
           ? '-translate-x-1/2' 
-          : 'translate-x-0' 
+          : '-translate-x-3'
         } ${
           light 
           ? 'bg-gray-100' 
